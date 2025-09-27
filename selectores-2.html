@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectors 2</title>
+    <style>
+        div p {
+            color: lime;
+        }
+
+        div > div {
+            background: plum;
+        }
+
+        .es {
+            background: red;
+        }
+
+        div + section {
+            background: palegreen;
+        }
+
+        div ~ p {
+            color: purple;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Desendientes</h1>
+        <p>Platzi</p>
+        <p>Es</p>
+        <p>Increible</p>
+    </div>
+    <hr>
+    <h2>Hijos Directos</h2>
+    <div>
+        <div>
+            <p>Platzi</p>
+            <div class='es'>Es</div>
+        </div>
+    </div>
+    <hr>
+    <h2>Elementos Adyacentes</h2>
+    <div>
+        Master
+    </div>
+    <section>
+        Es lo mejor
+    </section>
+    <hr>
+    <h2>Hermanos</h2>
+    <div>
+        para la casa
+    </div>
+    <p>Siempre estaremos</p>
+</body>
+</html>
